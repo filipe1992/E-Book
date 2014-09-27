@@ -27,13 +27,13 @@ Livro::Livro()
 
 void Livro::mudarpagina(const int direcao)
 {
-	if (direção)
+	if (direÃ§Ã£o)
 		this->paginaatual=incementaPagina(this->paginaatual);
 	else
 		this->paginaatual=padecrementaPagina(this->paginaatual);
 }
 
-void Livro::marcarpagina(const int paginaatual)
+void Livro::marcarpagina()
 {
 	this->paginamarcada=paginaatual;
 }
@@ -54,7 +54,7 @@ void Livro::BuscarPagina(const int pagina)
 	if ((pagina<=this->numerodepaginas)||(pagina>=0))
 		this->paginaatual=pagina;
 	else
-		cout <<"a pagina: "<<pagina<<" buscada é invalida pos nao esta no intervalo de 0 ate "<<this->numerodepaginas<<"(buscarpagina)!!"<<endl;
+		cout <<"a pagina: "<<pagina<<" buscada Ã© invalida pos nao esta no intervalo de 0 ate "<<this->numerodepaginas<<"(buscarpagina)!!"<<endl;
 }
 
 void Livro::setNomeLivro(const string nome)
@@ -73,7 +73,7 @@ int Livro::setNumeroDePaginas(const int paginas)
 }
 
 void Livro::MostrarDetalhes(){
-	cout <<"nome do livro: "<<this->mone<<"\nnome do autor: "<<this->autor<<"\nnumero de paginas: "<<this->numerodepaginas<<"\nmagina atual: "<<this->paginaatual<<(this->paginamarcada!=0)? "\ncom marcacao em: "<<this->paginamarcada:" " endl;
+	std::cout <<"nome do livro: "<<this->mone<<"\nnome do autor: "<<this->autor<<"\nnumero de paginas: "<<this->numerodepaginas<<"\nmagina atual: "<<this->paginaatual<<(this->paginamarcada!=0)? "\ncom marcacao em: "<<this->paginamarcada:" "<< std::endl;
 	//if (this->paginamarcada!=0)
 	//	cout <<"\ncom marcacao em: "<<this->paginamarcada<<endl;
 }

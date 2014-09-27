@@ -18,7 +18,7 @@ private:
 
 
 public:
-	Leitor(char nome, Biblioteca biblioteca);
+	Leitor(string nome);
 	
 	Leitor();
 

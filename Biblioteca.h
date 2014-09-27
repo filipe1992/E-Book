@@ -28,8 +28,6 @@ public:
 
 	void Ordenar();
 
-	void livrosLendo();
-
 	void mostrarLivros();
 
 	void Ler(const Livro &);

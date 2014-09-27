@@ -28,7 +28,7 @@ public:
 
 	void mudarpagina(const int);
 
-	void marcarpagina(const int);
+	void marcarpagina();
 
 	void reler();
 

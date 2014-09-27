@@ -7,18 +7,24 @@
 #include "Leitor.h"
 
 
-Leitor::Leitor(char nome, Biblioteca biblioteca)
+Leitor::Leitor(string nome)
 {
+	Leitor::setNome(nome);
+	this->setBiblioteca();
 }
 
 Leitor::Leitor()
 {
+	this->biblioteca->Biblioteca();
+	this->nome="desconhecido";
 }
 
-void Leitor::setBiblioteca(Biblioteca biblioteca)
+void Leitor::setBiblioteca()
 {
+	this->biblioteca.Biblioteca();
 }
 
 void Leitor::setNome(string nome)
 {
+	this->nome=nome;
 }
